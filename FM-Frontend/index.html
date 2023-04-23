@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FundMe DAPP</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      #container {
+        margin: 50px auto;
+        padding: 20px 50px;
+        width: 800px;
+        height: 700px;
+        border: 2px solid red;
+        border-radius: 16px;
+        background-color: aqua;
+      }
+
+      #fundBal {
+        width: 300px;
+        height: 40px;
+      }
+
+      #withdrawBal {
+        width: 160px;
+      }
+      .btn {
+        width: 100px;
+        height: 40px;
+        margin: 20px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Fund Raiser</h1>
+    <div id="container">
+      <button id="Owner" class="btn">Owner</button>
+      <div><b>Owner of the Contract is :</b></div>
+      <div id="ownerAdd" style="color: purple"></div>
+      <button id="connectBtn" class="btn">Connect</button>
+      <div class="FundMe">
+        <h2>Fund This Contract</h2>
+        <input
+          id="fundBal"
+          placeholder="Enter the amount of Ether you want to fund...."
+        />
+        <button id="fund" class="btn">Fund</button>
+      </div>
+      <button id="getBalance" class="btn">GetBalance</button>
+      <div><b>The balance of the Contract is :</b></div>
+      <div id="contractBal" style="color: purple"></div>
+      <div id="withdrawFund">
+        <h2>Withdraw collected fund from the Contract (Only Owner)</h2>
+        <button id="withdrawBal" class="btn">Withdraw Fund</button>
+      </div>
+      <script src="script/script.js" type="module"></script>
+    </div>
+  </body>
+</html>
